@@ -11,7 +11,6 @@ public class Voiture {
 	}
 	
 	  private String marque;
-
 	  private Integer nbPlaces;
 
 	  

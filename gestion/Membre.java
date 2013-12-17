@@ -11,15 +11,10 @@ public class Membre {
 	}
 
 	private Voiture voiture;
-
 	private Boolean conduit;
-
 	private String nom;
-
 	private String email;
-
 	private String telephone;
-
 	private Integer idMembre;
 
 	public void Membre(String nom, Boolean conduit, Voiture voiture, String email, String telephone) {
