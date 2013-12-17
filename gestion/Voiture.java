@@ -9,5 +9,27 @@ public class Voiture {
 		
 
 	}
+	
+	  private String marque;
+
+	  private Integer nbPlaces;
+
+	  
+	  private void Voiture() {
+	  }
+
+	  public void Voiture(String marque, Integer nbPlaces) {
+	  }
+
+	  public void Voiture(Integer nbPlaces) {
+	  }
+
+	  public Integer getNbPlaces() {
+	  return null;
+	  }
+
+	  public String getMarque() {
+	  return null;
+	  }
 
 }
