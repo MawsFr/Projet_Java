@@ -25,11 +25,11 @@ public class Voiture {
 	  }
 
 	  public Integer getNbPlaces() {
-	  return null;
+
 	  }
 
 	  public String getMarque() {
-	  return null;
+
 	  }
 
 }
