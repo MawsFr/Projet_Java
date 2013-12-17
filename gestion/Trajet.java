@@ -30,7 +30,6 @@ public class Trajet {
 
 	private Integer idTrajet;
 
-	public Integer newAttr;
 
 	public void Trajet(String adresseDepart, String adresseDestination, GregorianCalendar heureDepart, String descriptif, Membre auteur) {
 	}
