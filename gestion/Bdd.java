@@ -2,6 +2,8 @@ package gestion;
 
 import java.util.ArrayList;
 import java.util.List;
+import membres.*;
+import trajets.*;
 
 public class Bdd {
 
@@ -44,6 +46,10 @@ public class Bdd {
 		
 		if(trajetExiste(trajet) && membreExiste(membre))
 		{
+			if(membre.conduit())
+			{
+				trajet.setAuteur(membre);
+			}
 			
 		}
 		
@@ -51,9 +57,12 @@ public class Bdd {
 	}
 
 	public void creerMembre(Membre embre) {
+		
 	}
 
 	public void creerTrajet(Trajet trajet) {
+		
+		
 	}
 
 	public void supprimerTrajet(Trajet trajet) {

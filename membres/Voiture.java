@@ -1,4 +1,6 @@
-package gestion;
+package membres;
+
+import membres.*;
 
 public class Voiture {
 
@@ -15,20 +17,25 @@ public class Voiture {
 
 	  
 	  private void Voiture() {
+		  this.nbPlaces = 2;
+		  this.marque = "Inconnue";
 	  }
 
 	  public void Voiture(String marque, Integer nbPlaces) {
+		  this.marque = marque;
+		  this.nbPlaces = nbPlaces;
 	  }
 
 	  public void Voiture(Integer nbPlaces) {
+		  this.nbPlaces = nbPlaces;
 	  }
 
 	  public Integer getNbPlaces() {
-
+		  return this.nbPlaces;
 	  }
 
 	  public String getMarque() {
-
+		  return this.marque;
 	  }
 
 }
