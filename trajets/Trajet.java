@@ -17,7 +17,7 @@ public class Trajet {
 	private List<Membre> passagers;
 	private Integer idTrajet;
 
-	public void Trajet(String adresseDepart, String adresseDestination, GregorianCalendar heureDepart, String descriptif, Membre auteur) {
+	public Trajet(String adresseDepart, String adresseDestination, GregorianCalendar heureDepart, String descriptif, Membre auteur) {
 		this.nbTrajetsCrees++;
 		this.adresseDepart=adresseDepart;
 		this.adresseDestination=adresseDestination;

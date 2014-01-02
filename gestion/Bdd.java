@@ -69,7 +69,7 @@ public class Bdd {
 	}
 
 	public void supprimerMembre(Membre membre) {
-		
+	
 	}
 	
 	public Integer rechercherTrajet(Trajet trajet)
