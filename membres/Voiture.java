@@ -30,8 +30,9 @@ public class Voiture {
 	   * @param nbPlaces
 	   */
 	  public Voiture(String marque, Integer nbPlaces) {
+		  //TODO LEVER UNE EXCEPTION SUR LE NB DE PLACE DANS LA VOITURE
 		  this.marque = marque;
-		  this.nbPlaces = nbPlaces;
+		  this.setNbPlaces(nbPlaces);
 	  }
 	  
 	  /**
@@ -39,7 +40,7 @@ public class Voiture {
 	   * @param nbPlaces
 	   */
 	  public Voiture(Integer nbPlaces) {
-		  this.nbPlaces = nbPlaces;
+		  this.setNbPlaces(nbPlaces);
 	  }
 
 	  /**
@@ -64,7 +65,15 @@ public class Voiture {
 	   */
 	  public void setNbPlaces(int nbPlaces)
 	  {
-		  this.nbPlaces = nbPlaces;
+		  if(nbPlaces >=2)
+		  {
+			  this.nbPlaces = nbPlaces;
+		  }
+		  else
+		  {
+			  System.out.println("La voiture doit avoir au moins deux place !! En attendant de lever l'exception on met a deux par defaut");
+			  this.nbPlaces = 2;
+		  }
 	  }
 	  
 	  /**

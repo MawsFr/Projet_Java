@@ -105,16 +105,33 @@ public class Membre {
 		this.idMembre = nbMembresCrees;
 
 	}
+	
 	/**
-	 * 
+	 * L'id du membre
+	 * @return the idMembre
+	 */
+	public Integer getIdMembre() {
+		return idMembre;
+	}
+
+	/**
+	 * Le nom du membre
+	 * @param nom the nom to set
+	 */
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	/**
+	 * La voiture du membre
 	 * @param voiture
 	 */
-	public void changerVoiture(Voiture voiture) {
+	public void setVoiture(Voiture voiture) {
 		this.voiture = voiture;
 	}
 
 	/**
-	 * 
+	 * L'e-mail du membre
 	 * @param email
 	 */
 	public void setEmail(String email) {
@@ -122,7 +139,7 @@ public class Membre {
 	}
 	
 	/**
-	 * 
+	 * Le numéro de téléphone du membre
 	 * @param telephone
 	 */
 	public void setTelephone(String telephone) {
@@ -130,7 +147,7 @@ public class Membre {
 	}
 	
 	/**
-	 * 
+	 * Met a jour si le membre consuit ou pas
 	 * @param conduit
 	 */
 	public void setConduit(Boolean conduit) {
@@ -138,7 +155,7 @@ public class Membre {
 	}
 	
 	/**
-	 * 
+	 *
 	 * @return Si le membre conduit ou pas
 	 */
 	public Boolean conduit() {
